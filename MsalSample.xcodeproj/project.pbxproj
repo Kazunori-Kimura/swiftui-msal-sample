@@ -53,6 +53,7 @@
 		8C6867652B69D82E004EE4CF /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		8C6867682B69DC62004EE4CF /* Debug.Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.Secret.xcconfig; sourceTree = "<group>"; };
 		8C68676A2B69DD5E004EE4CF /* Release.Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.Secret.xcconfig; sourceTree = "<group>"; };
+		8C68676C2B69E0B0004EE4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +105,11 @@
 		8C6867352B68E607004EE4CF /* MsalSample */ = {
 			isa = PBXGroup;
 			children = (
-				8C6867632B69D775004EE4CF /* Config */,
-				8C6867362B68E607004EE4CF /* MsalSampleApp.swift */,
+				8C68676C2B69E0B0004EE4CF /* Info.plist */,
 				8C6867382B68E607004EE4CF /* ContentView.swift */,
+				8C6867362B68E607004EE4CF /* MsalSampleApp.swift */,
 				8C68673A2B68E609004EE4CF /* Assets.xcassets */,
+				8C6867632B69D775004EE4CF /* Config */,
 				8C68673C2B68E609004EE4CF /* Preview Content */,
 			);
 			path = MsalSample;
@@ -459,6 +461,8 @@
 				DEVELOPMENT_TEAM = 783N2PRQ4E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MsalSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "[DEBUG]MsalSample";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -492,6 +496,8 @@
 				DEVELOPMENT_TEAM = 783N2PRQ4E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MsalSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "[DEBUG]MsalSample";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
