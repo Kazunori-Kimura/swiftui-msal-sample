@@ -54,6 +54,7 @@
 		8C6867682B69DC62004EE4CF /* Debug.Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.Secret.xcconfig; sourceTree = "<group>"; };
 		8C68676A2B69DD5E004EE4CF /* Release.Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.Secret.xcconfig; sourceTree = "<group>"; };
 		8C68676C2B69E0B0004EE4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8C68676D2B69EE90004EE4CF /* MsalSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MsalSample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		8C6867352B68E607004EE4CF /* MsalSample */ = {
 			isa = PBXGroup;
 			children = (
+				8C68676D2B69EE90004EE4CF /* MsalSample.entitlements */,
 				8C68676C2B69E0B0004EE4CF /* Info.plist */,
 				8C6867382B68E607004EE4CF /* ContentView.swift */,
 				8C6867362B68E607004EE4CF /* MsalSampleApp.swift */,
@@ -455,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MsalSample/MsalSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MsalSample/Preview Content\"";
@@ -490,6 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MsalSample/MsalSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MsalSample/Preview Content\"";
