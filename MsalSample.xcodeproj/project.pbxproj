@@ -14,6 +14,11 @@
 		8C6867482B68E609004EE4CF /* MsalSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867472B68E609004EE4CF /* MsalSampleTests.swift */; };
 		8C6867522B68E609004EE4CF /* MsalSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867512B68E609004EE4CF /* MsalSampleUITests.swift */; };
 		8C6867542B68E609004EE4CF /* MsalSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867532B68E609004EE4CF /* MsalSampleUITestsLaunchTests.swift */; };
+		8C6867622B68E75D004EE4CF /* MSAL in Frameworks */ = {isa = PBXBuildFile; productRef = 8C6867612B68E75D004EE4CF /* MSAL */; };
+		8C6867662B69D82E004EE4CF /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8C6867652B69D82E004EE4CF /* Release.xcconfig */; };
+		8C6867672B69D841004EE4CF /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8C6867642B69D7F0004EE4CF /* Debug.xcconfig */; };
+		8C6867692B69DC62004EE4CF /* Debug.Secret.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8C6867682B69DC62004EE4CF /* Debug.Secret.xcconfig */; };
+		8C68676B2B69DD5E004EE4CF /* Release.Secret.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8C68676A2B69DD5E004EE4CF /* Release.Secret.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 		8C68674D2B68E609004EE4CF /* MsalSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MsalSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6867512B68E609004EE4CF /* MsalSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsalSampleUITests.swift; sourceTree = "<group>"; };
 		8C6867532B68E609004EE4CF /* MsalSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsalSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C6867642B69D7F0004EE4CF /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		8C6867652B69D82E004EE4CF /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		8C6867682B69DC62004EE4CF /* Debug.Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.Secret.xcconfig; sourceTree = "<group>"; };
+		8C68676A2B69DD5E004EE4CF /* Release.Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.Secret.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6867622B68E75D004EE4CF /* MSAL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +104,7 @@
 		8C6867352B68E607004EE4CF /* MsalSample */ = {
 			isa = PBXGroup;
 			children = (
+				8C6867632B69D775004EE4CF /* Config */,
 				8C6867362B68E607004EE4CF /* MsalSampleApp.swift */,
 				8C6867382B68E607004EE4CF /* ContentView.swift */,
 				8C68673A2B68E609004EE4CF /* Assets.xcassets */,
@@ -127,6 +138,17 @@
 			path = MsalSampleUITests;
 			sourceTree = "<group>";
 		};
+		8C6867632B69D775004EE4CF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8C6867642B69D7F0004EE4CF /* Debug.xcconfig */,
+				8C6867652B69D82E004EE4CF /* Release.xcconfig */,
+				8C6867682B69DC62004EE4CF /* Debug.Secret.xcconfig */,
+				8C68676A2B69DD5E004EE4CF /* Release.Secret.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +165,9 @@
 			dependencies = (
 			);
 			name = MsalSample;
+			packageProductDependencies = (
+				8C6867612B68E75D004EE4CF /* MSAL */,
+			);
 			productName = MsalSample;
 			productReference = 8C6867332B68E607004EE4CF /* MsalSample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 8C68672A2B68E607004EE4CF;
+			packageReferences = (
+				8C6867602B68E75D004EE4CF /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */,
+			);
 			productRefGroup = 8C6867342B68E607004EE4CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6867692B69DC62004EE4CF /* Debug.Secret.xcconfig in Resources */,
+				8C6867672B69D841004EE4CF /* Debug.xcconfig in Resources */,
 				8C68673E2B68E609004EE4CF /* Preview Assets.xcassets in Resources */,
 				8C68673B2B68E609004EE4CF /* Assets.xcassets in Resources */,
+				8C68676B2B69DD5E004EE4CF /* Release.Secret.xcconfig in Resources */,
+				8C6867662B69D82E004EE4CF /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +329,7 @@
 /* Begin XCBuildConfiguration section */
 		8C6867552B68E609004EE4CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6867642B69D7F0004EE4CF /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -360,6 +393,7 @@
 		};
 		8C6867562B68E609004EE4CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6867652B69D82E004EE4CF /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -430,16 +464,20 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kazunori-kimura.MsalSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -459,16 +497,20 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kazunori-kimura.MsalSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -588,6 +630,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C6867602B68E75D004EE4CF /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AzureAD/microsoft-authentication-library-for-objc";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.21;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C6867612B68E75D004EE4CF /* MSAL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C6867602B68E75D004EE4CF /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */;
+			productName = MSAL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C68672B2B68E607004EE4CF /* Project object */;
 }

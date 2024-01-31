@@ -1,0 +1,11 @@
+//
+//  Debug.xcconfig
+//  MsalSample
+//
+//  Created by Kazunori Kimura on 2024/01/31.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+INFOPLIST_KEY_CFBundleDisplayName = [DEBUG]$(TARGET_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = io.github.kazunori-kimura.MsalSample-Debug
