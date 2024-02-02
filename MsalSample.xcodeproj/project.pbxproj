@@ -43,6 +43,9 @@
 		8C6867942B6C7032004EE4CF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867932B6C7032004EE4CF /* ContentViewModel.swift */; };
 		8C6867952B6C7032004EE4CF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867932B6C7032004EE4CF /* ContentViewModel.swift */; };
 		8C6867962B6C7032004EE4CF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867932B6C7032004EE4CF /* ContentViewModel.swift */; };
+		8C68679B2B6CDDB6004EE4CF /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68679A2B6CDDB6004EE4CF /* AppContext.swift */; };
+		8C68679C2B6CDDB6004EE4CF /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68679A2B6CDDB6004EE4CF /* AppContext.swift */; };
+		8C68679D2B6CDDB6004EE4CF /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68679A2B6CDDB6004EE4CF /* AppContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,7 @@
 		8C68678A2B6B583B004EE4CF /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		8C68678E2B6B6365004EE4CF /* UIApplication+TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopViewController.swift"; sourceTree = "<group>"; };
 		8C6867932B6C7032004EE4CF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		8C68679A2B6CDDB6004EE4CF /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,7 @@
 		8C6867732B6B2922004EE4CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8C68679A2B6CDDB6004EE4CF /* AppContext.swift */,
 				8C6867852B6B42E7004EE4CF /* AuthCredentials.swift */,
 				8C6867742B6B293E004EE4CF /* AuthState.swift */,
 			);
@@ -370,6 +375,7 @@
 				8C68677A2B6B31F7004EE4CF /* Logger.swift in Sources */,
 				8C6867752B6B293E004EE4CF /* AuthState.swift in Sources */,
 				8C68678F2B6B6365004EE4CF /* UIApplication+TopViewController.swift in Sources */,
+				8C68679B2B6CDDB6004EE4CF /* AppContext.swift in Sources */,
 				8C68677E2B6B358F004EE4CF /* AuthService.swift in Sources */,
 				8C6867942B6C7032004EE4CF /* ContentViewModel.swift in Sources */,
 				8C6867822B6B35E6004EE4CF /* Container.swift in Sources */,
@@ -383,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C6867482B68E609004EE4CF /* MsalSampleTests.swift in Sources */,
+				8C68679C2B6CDDB6004EE4CF /* AppContext.swift in Sources */,
 				8C68678C2B6B583B004EE4CF /* Bundle+Extension.swift in Sources */,
 				8C68677B2B6B31F7004EE4CF /* Logger.swift in Sources */,
 				8C6867832B6B35E6004EE4CF /* Container.swift in Sources */,
@@ -403,6 +410,7 @@
 				8C6867882B6B42E7004EE4CF /* AuthCredentials.swift in Sources */,
 				8C68678D2B6B583B004EE4CF /* Bundle+Extension.swift in Sources */,
 				8C6867962B6C7032004EE4CF /* ContentViewModel.swift in Sources */,
+				8C68679D2B6CDDB6004EE4CF /* AppContext.swift in Sources */,
 				8C6867772B6B293E004EE4CF /* AuthState.swift in Sources */,
 				8C6867802B6B358F004EE4CF /* AuthService.swift in Sources */,
 				8C6867912B6B6365004EE4CF /* UIApplication+TopViewController.swift in Sources */,

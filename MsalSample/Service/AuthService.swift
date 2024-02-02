@@ -18,9 +18,8 @@ protocol AuthServiceProtocol {
 }
 
 class AuthService: AuthServiceProtocol {
-    // 認証データ
-    @Injected(\.authState)
-    private var authState
+    @Injected(\.appContext)
+    private var appContext
     // B2C キー
     @Injected(\.authCredentials)
     private var authCredentials
@@ -130,7 +129,7 @@ class AuthService: AuthServiceProtocol {
     /**
      * アカウントの読み込み
      */
-    private func loadAccount(completion: ((Account?) -> Void)?) {
+    private func loadAccount(completion: ((MSALAccount?) -> Void)?) {
         guard let cntx = context else { return }
         
         let params = MSALParameters()
@@ -145,12 +144,9 @@ class AuthService: AuthServiceProtocol {
             if let account = account {
                 Logger.auth.debug("\(#function): account = \(String(describing: account))")
                 
-                // アカウントデータをそのまま保持
+                // アカウントデータを保持
                 self.msAccount = account
-                // アプリで使用する形に変換して保持
-                let payload = Account(email: account.username)
-                self.setAccount(payload)
-                completion?(payload)
+                completion?(account)
                 return
             }
             
@@ -165,10 +161,21 @@ class AuthService: AuthServiceProtocol {
     /**
      * アカウント情報を更新する
      */
-    private func setAccount(_ account: Account?) {
+    private func setAccount(_ account: MSALAccount?) {
         DispatchQueue.main.async {
-            self.authState.userIsLogedIn = account != nil
-            self.authState.account = account
+            self.appContext.userIsLogedIn = account != nil
+            if account == nil {
+                self.appContext.accessToken = nil
+            }
+        }
+    }
+    /**
+     * トークンの更新
+     */
+    private func setAccount(token: String?) {
+        DispatchQueue.main.async {
+            self.appContext.userIsLogedIn = token != nil
+            self.appContext.accessToken = token
         }
     }
     
@@ -201,8 +208,7 @@ class AuthService: AuthServiceProtocol {
             }
             
             self.msAccount = account
-            let payload = Account(email: account.username, accessToken: token)
-            self.setAccount(payload)
+            self.setAccount(token: token)
             
             Logger.auth.info("\(#function): AccessToken is acquired. (account = \(String(describing: account)), accessToken = \(token.prefix(5))...")
             dump(account)
@@ -248,8 +254,7 @@ class AuthService: AuthServiceProtocol {
             }
             
             self.msAccount = account
-            let payload = Account(email: account.username, accessToken: token)
-            self.setAccount(payload)
+            self.setAccount(token: token)
             
             Logger.auth.info("\(#function): AccessToken is acquired.")
         }

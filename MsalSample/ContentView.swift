@@ -9,7 +9,7 @@ import SwiftUI
 import Factory
 
 struct ContentView: View {
-    @StateObject var viewModel = ContentViewModel()
+    @EnvironmentObject var appContext: AppContext
     @Injected(\.authService) private var authService
     
     var body: some View {
@@ -17,17 +17,17 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text(viewModel.authState.account?.email ?? "ログインしてください")
+            Text(appContext.userIsLogedIn ? "ログイン中": "ログインしてください")
             
             Button("Login") {
                 authService.login(withInteraction: true)
             }
-//            .disabled(viewModel.authState.userIsLogedIn)
+            .disabled(appContext.userIsLogedIn)
             
             Button("Logout") {
                 authService.logout()
             }
-//            .disabled(!viewModel.authState.userIsLogedIn)
+            .disabled(!appContext.userIsLogedIn)
         }
         .padding()
     }

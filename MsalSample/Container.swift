@@ -8,6 +8,10 @@
 import Factory
 
 extension Container {
+    var appContext: Factory<AppContext> {
+        Factory(self) { AppContext() }
+            .singleton
+    }
     var authCredentials: Factory<AuthCredentialsType> {
         Factory(self) { AuthCredentials() }
             .singleton

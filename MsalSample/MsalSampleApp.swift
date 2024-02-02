@@ -12,6 +12,7 @@ import Factory
 struct MsalSampleApp: App {
     @Environment(\.scenePhase) var scenePhase
     @Injected(\.authService) var authService
+    @Injected(\.appContext) var appContext
     
     var body: some Scene {
         WindowGroup {
@@ -28,6 +29,7 @@ struct MsalSampleApp: App {
                 .onOpenURL { url in
                     authService.openUrl(url: url)
                 }
+                .environmentObject(appContext)
         }
     }
 }
