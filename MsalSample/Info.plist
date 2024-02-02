@@ -4,11 +4,38 @@
 <dict>
 	<key>API_URL</key>
 	<string>$(API_SCHEME)://$(API_BASE_URL)</string>
+	<key>B2C_APP_ID</key>
+	<string>$(B2C_APP_ID)</string>
+	<key>B2C_AUTHORITY</key>
+	<string>https://$(B2C_AUTHORITY)</string>
+	<key>B2C_CLIENT_ID</key>
+	<string>$(B2C_CLIENT_ID)</string>
+	<key>B2C_CLIENT_SECRET</key>
+	<string>$(B2C_CLIENT_SECRET)</string>
+	<key>B2C_DOMAIN</key>
+	<string>https://$(B2C_DOMAIN)</string>
+	<key>B2C_RESET</key>
+	<string>https://$(B2C_RESET)</string>
+	<key>B2C_SCOPES</key>
+	<array>
+		<string>https://$(B2C_SCOPE_URI)</string>
+	</array>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>aa</string>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+		</dict>
+	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLSchemes</key>
-			<string>msauth.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<array>
+				<string>msauth.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			</array>
 		</dict>
 	</array>
 	<key>LSApplicationQueriesSchemes</key>

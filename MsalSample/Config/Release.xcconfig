@@ -7,7 +7,7 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
-#include? "Release.Secret"
+#include? "Release.Secret.xcconfig"
 
 INFOPLIST_KEY_CFBundleDisplayName = $(TARGET_NAME)
 PRODUCT_BUNDLE_IDENTIFIER = io.github.kazunori-kimura.MsalSample
