@@ -9,6 +9,5 @@ import SwiftUI
 import Factory
 
 class ContentViewModel: ObservableObject {
-    @Injected(\.authState)
-    var authState
+    @Published var username: String? = nil
 }

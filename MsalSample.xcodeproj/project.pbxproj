@@ -19,9 +19,6 @@
 		8C6867672B69D841004EE4CF /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8C6867642B69D7F0004EE4CF /* Debug.xcconfig */; };
 		8C6867692B69DC62004EE4CF /* Debug.Secret.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8C6867682B69DC62004EE4CF /* Debug.Secret.xcconfig */; };
 		8C6867722B6A31A0004EE4CF /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 8C6867712B6A31A0004EE4CF /* Factory */; };
-		8C6867752B6B293E004EE4CF /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867742B6B293E004EE4CF /* AuthState.swift */; };
-		8C6867762B6B293E004EE4CF /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867742B6B293E004EE4CF /* AuthState.swift */; };
-		8C6867772B6B293E004EE4CF /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867742B6B293E004EE4CF /* AuthState.swift */; };
 		8C68677A2B6B31F7004EE4CF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867792B6B31F7004EE4CF /* Logger.swift */; };
 		8C68677B2B6B31F7004EE4CF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867792B6B31F7004EE4CF /* Logger.swift */; };
 		8C68677C2B6B31F7004EE4CF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867792B6B31F7004EE4CF /* Logger.swift */; };
@@ -81,7 +78,6 @@
 		8C6867682B69DC62004EE4CF /* Debug.Secret.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.Secret.xcconfig; sourceTree = "<group>"; };
 		8C68676C2B69E0B0004EE4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8C68676D2B69EE90004EE4CF /* MsalSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MsalSample.entitlements; sourceTree = "<group>"; };
-		8C6867742B6B293E004EE4CF /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
 		8C6867792B6B31F7004EE4CF /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		8C68677D2B6B358F004EE4CF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8C6867812B6B35E6004EE4CF /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
@@ -198,7 +194,6 @@
 			children = (
 				8C68679A2B6CDDB6004EE4CF /* AppContext.swift */,
 				8C6867852B6B42E7004EE4CF /* AuthCredentials.swift */,
-				8C6867742B6B293E004EE4CF /* AuthState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -373,7 +368,6 @@
 				8C6867862B6B42E7004EE4CF /* AuthCredentials.swift in Sources */,
 				8C68678B2B6B583B004EE4CF /* Bundle+Extension.swift in Sources */,
 				8C68677A2B6B31F7004EE4CF /* Logger.swift in Sources */,
-				8C6867752B6B293E004EE4CF /* AuthState.swift in Sources */,
 				8C68678F2B6B6365004EE4CF /* UIApplication+TopViewController.swift in Sources */,
 				8C68679B2B6CDDB6004EE4CF /* AppContext.swift in Sources */,
 				8C68677E2B6B358F004EE4CF /* AuthService.swift in Sources */,
@@ -393,7 +387,6 @@
 				8C68678C2B6B583B004EE4CF /* Bundle+Extension.swift in Sources */,
 				8C68677B2B6B31F7004EE4CF /* Logger.swift in Sources */,
 				8C6867832B6B35E6004EE4CF /* Container.swift in Sources */,
-				8C6867762B6B293E004EE4CF /* AuthState.swift in Sources */,
 				8C6867952B6C7032004EE4CF /* ContentViewModel.swift in Sources */,
 				8C6867872B6B42E7004EE4CF /* AuthCredentials.swift in Sources */,
 				8C68677F2B6B358F004EE4CF /* AuthService.swift in Sources */,
@@ -411,7 +404,6 @@
 				8C68678D2B6B583B004EE4CF /* Bundle+Extension.swift in Sources */,
 				8C6867962B6C7032004EE4CF /* ContentViewModel.swift in Sources */,
 				8C68679D2B6CDDB6004EE4CF /* AppContext.swift in Sources */,
-				8C6867772B6B293E004EE4CF /* AuthState.swift in Sources */,
 				8C6867802B6B358F004EE4CF /* AuthService.swift in Sources */,
 				8C6867912B6B6365004EE4CF /* UIApplication+TopViewController.swift in Sources */,
 				8C6867542B68E609004EE4CF /* MsalSampleUITestsLaunchTests.swift in Sources */,
