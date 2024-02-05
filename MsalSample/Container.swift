@@ -20,4 +20,8 @@ extension Container {
         Factory(self) { AuthService() }
             .singleton
     }
+    var fetchService: Factory<FetchServiceProtocol> {
+        Factory(self) { FetchService() }
+            .singleton
+    }
 }

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C159B132B7084DD00E809BB /* MNDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B122B7084DD00E809BB /* MNDao.swift */; };
+		8C159B142B7084DD00E809BB /* MNDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B122B7084DD00E809BB /* MNDao.swift */; };
+		8C159B152B7084DD00E809BB /* MNDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B122B7084DD00E809BB /* MNDao.swift */; };
+		8C159B172B70851600E809BB /* MNUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B162B70851600E809BB /* MNUser.swift */; };
+		8C159B182B70851600E809BB /* MNUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B162B70851600E809BB /* MNUser.swift */; };
+		8C159B192B70851600E809BB /* MNUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B162B70851600E809BB /* MNUser.swift */; };
+		8C159B1B2B709F0600E809BB /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B1A2B709F0600E809BB /* FetchService.swift */; };
+		8C159B1C2B709F0600E809BB /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B1A2B709F0600E809BB /* FetchService.swift */; };
+		8C159B1D2B709F0600E809BB /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B1A2B709F0600E809BB /* FetchService.swift */; };
+		8C159B1F2B70AB7900E809BB /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B1E2B70AB7900E809BB /* HTTPURLResponse+Extension.swift */; };
+		8C159B202B70AB7900E809BB /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B1E2B70AB7900E809BB /* HTTPURLResponse+Extension.swift */; };
+		8C159B212B70AB7900E809BB /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C159B1E2B70AB7900E809BB /* HTTPURLResponse+Extension.swift */; };
 		8C6867372B68E607004EE4CF /* MsalSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867362B68E607004EE4CF /* MsalSampleApp.swift */; };
 		8C6867392B68E607004EE4CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6867382B68E607004EE4CF /* ContentView.swift */; };
 		8C68673B2B68E609004EE4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C68673A2B68E609004EE4CF /* Assets.xcassets */; };
@@ -63,6 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C159B122B7084DD00E809BB /* MNDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNDao.swift; sourceTree = "<group>"; };
+		8C159B162B70851600E809BB /* MNUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNUser.swift; sourceTree = "<group>"; };
+		8C159B1A2B709F0600E809BB /* FetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchService.swift; sourceTree = "<group>"; };
+		8C159B1E2B70AB7900E809BB /* HTTPURLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extension.swift"; sourceTree = "<group>"; };
 		8C6867332B68E607004EE4CF /* MsalSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MsalSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6867362B68E607004EE4CF /* MsalSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsalSampleApp.swift; sourceTree = "<group>"; };
 		8C6867382B68E607004EE4CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +131,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C159B112B7084B600E809BB /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				8C159B122B7084DD00E809BB /* MNDao.swift */,
+				8C159B162B70851600E809BB /* MNUser.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
 		8C68672A2B68E607004EE4CF = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +217,7 @@
 		8C6867732B6B2922004EE4CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8C159B112B7084B600E809BB /* DAO */,
 				8C68679A2B6CDDB6004EE4CF /* AppContext.swift */,
 				8C6867852B6B42E7004EE4CF /* AuthCredentials.swift */,
 			);
@@ -202,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				8C68677D2B6B358F004EE4CF /* AuthService.swift */,
+				8C159B1A2B709F0600E809BB /* FetchService.swift */,
 				8C6867792B6B31F7004EE4CF /* Logger.swift */,
 			);
 			path = Service;
@@ -211,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				8C68678A2B6B583B004EE4CF /* Bundle+Extension.swift */,
+				8C159B1E2B70AB7900E809BB /* HTTPURLResponse+Extension.swift */,
 				8C68678E2B6B6365004EE4CF /* UIApplication+TopViewController.swift */,
 			);
 			path = Extension;
@@ -366,13 +394,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C6867862B6B42E7004EE4CF /* AuthCredentials.swift in Sources */,
+				8C159B172B70851600E809BB /* MNUser.swift in Sources */,
 				8C68678B2B6B583B004EE4CF /* Bundle+Extension.swift in Sources */,
 				8C68677A2B6B31F7004EE4CF /* Logger.swift in Sources */,
 				8C68678F2B6B6365004EE4CF /* UIApplication+TopViewController.swift in Sources */,
 				8C68679B2B6CDDB6004EE4CF /* AppContext.swift in Sources */,
+				8C159B1F2B70AB7900E809BB /* HTTPURLResponse+Extension.swift in Sources */,
+				8C159B1B2B709F0600E809BB /* FetchService.swift in Sources */,
 				8C68677E2B6B358F004EE4CF /* AuthService.swift in Sources */,
 				8C6867942B6C7032004EE4CF /* ContentViewModel.swift in Sources */,
 				8C6867822B6B35E6004EE4CF /* Container.swift in Sources */,
+				8C159B132B7084DD00E809BB /* MNDao.swift in Sources */,
 				8C6867392B68E607004EE4CF /* ContentView.swift in Sources */,
 				8C6867372B68E607004EE4CF /* MsalSampleApp.swift in Sources */,
 			);
@@ -382,9 +414,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C159B202B70AB7900E809BB /* HTTPURLResponse+Extension.swift in Sources */,
 				8C6867482B68E609004EE4CF /* MsalSampleTests.swift in Sources */,
 				8C68679C2B6CDDB6004EE4CF /* AppContext.swift in Sources */,
 				8C68678C2B6B583B004EE4CF /* Bundle+Extension.swift in Sources */,
+				8C159B182B70851600E809BB /* MNUser.swift in Sources */,
+				8C159B1C2B709F0600E809BB /* FetchService.swift in Sources */,
+				8C159B142B7084DD00E809BB /* MNDao.swift in Sources */,
 				8C68677B2B6B31F7004EE4CF /* Logger.swift in Sources */,
 				8C6867832B6B35E6004EE4CF /* Container.swift in Sources */,
 				8C6867952B6C7032004EE4CF /* ContentViewModel.swift in Sources */,
@@ -399,13 +435,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C6867522B68E609004EE4CF /* MsalSampleUITests.swift in Sources */,
+				8C159B192B70851600E809BB /* MNUser.swift in Sources */,
 				8C6867842B6B35E6004EE4CF /* Container.swift in Sources */,
 				8C6867882B6B42E7004EE4CF /* AuthCredentials.swift in Sources */,
 				8C68678D2B6B583B004EE4CF /* Bundle+Extension.swift in Sources */,
 				8C6867962B6C7032004EE4CF /* ContentViewModel.swift in Sources */,
+				8C159B212B70AB7900E809BB /* HTTPURLResponse+Extension.swift in Sources */,
+				8C159B1D2B709F0600E809BB /* FetchService.swift in Sources */,
 				8C68679D2B6CDDB6004EE4CF /* AppContext.swift in Sources */,
 				8C6867802B6B358F004EE4CF /* AuthService.swift in Sources */,
 				8C6867912B6B6365004EE4CF /* UIApplication+TopViewController.swift in Sources */,
+				8C159B152B7084DD00E809BB /* MNDao.swift in Sources */,
 				8C6867542B68E609004EE4CF /* MsalSampleUITestsLaunchTests.swift in Sources */,
 				8C68677C2B6B31F7004EE4CF /* Logger.swift in Sources */,
 			);
