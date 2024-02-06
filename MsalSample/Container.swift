@@ -12,7 +12,7 @@ extension Container {
         Factory(self) { AppContext() }
             .singleton
     }
-    var authCredentials: Factory<AuthCredentialsType> {
+    var authCredentials: Factory<AuthCredentials> {
         Factory(self) { AuthCredentials() }
             .singleton
     }

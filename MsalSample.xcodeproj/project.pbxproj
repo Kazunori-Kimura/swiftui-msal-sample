@@ -229,7 +229,6 @@
 			children = (
 				8C68677D2B6B358F004EE4CF /* AuthService.swift */,
 				8C159B1A2B709F0600E809BB /* FetchService.swift */,
-				8C6867792B6B31F7004EE4CF /* Logger.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -239,6 +238,7 @@
 			children = (
 				8C68678A2B6B583B004EE4CF /* Bundle+Extension.swift */,
 				8C159B1E2B70AB7900E809BB /* HTTPURLResponse+Extension.swift */,
+				8C6867792B6B31F7004EE4CF /* Logger.swift */,
 				8C68678E2B6B6365004EE4CF /* UIApplication+TopViewController.swift */,
 			);
 			path = Extension;

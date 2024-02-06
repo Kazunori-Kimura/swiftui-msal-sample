@@ -10,5 +10,4 @@ import Foundation
 class AppContext: ObservableObject {
     @Published var userIsLogedIn: Bool = false
     @Published var accessToken: String? = nil
-    @Published var email: String? = nil
 }
